@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1611503105632125320}
   - component: {fileID: 1611503105632125316}
   - component: {fileID: 3634931338695832354}
-  - component: {fileID: 4635696314665065026}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1611503105632125321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.49, y: 5.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1611503106278198850}
@@ -114,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.95, y: 0.95}
+  m_Size: {x: 0.7, y: 0.95}
   m_EdgeRadius: 0
 --- !u!50 &1611503105632125320
 Rigidbody2D:
@@ -149,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cfc6b74e5a18f6409e1ea683956c347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horitzontalMoveMultiplier: 7
+  horitzontalMoveMultiplier: 5
   jumpMultiplier: 12
   jumpableGround:
     serializedVersion: 2
@@ -166,19 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7df519a43f2e1945a54467ea25fe46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
---- !u!114 &4635696314665065026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611503105632125321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f264acef5a5e94d4e8651460481bfc07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  BulletTrail: {fileID: -3485799787856847737, guid: 6f505db46f2b33649bf30080a5e54422, type: 3}
+  inactiveGunSpr: {fileID: 1836073047, guid: ea82fab18e055744a95beddd9ebd82e3, type: 3}
+  activeGunSpr: {fileID: 2046455519, guid: ea82fab18e055744a95beddd9ebd82e3, type: 3}
 --- !u!1 &1611503105838042948
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +242,7 @@ SpriteRenderer:
   m_SortingLayerID: 97546359
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ea82fab18e055744a95beddd9ebd82e3, type: 3}
+  m_Sprite: {fileID: 1836073047, guid: ea82fab18e055744a95beddd9ebd82e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

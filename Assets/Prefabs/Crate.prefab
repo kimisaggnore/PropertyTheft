@@ -169,12 +169,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 8447275228532266620}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 8447275228532266620}
+  m_maskType: 0
 --- !u!114 &8447275228532266594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propertyList:
-  - {fileID: 11400000, guid: 848e4e893eae62e4192e1d7756b11355, type: 2}
+  - {fileID: 11400000, guid: 74a0d6347d2107341a0f4fe79b0d3aa4, type: 2}
   defaultMaterial: {fileID: 11400000, guid: 74a0d6347d2107341a0f4fe79b0d3aa4, type: 2}
   swapIcon: {fileID: 7710707278093201530, guid: 627e24d5d8927c44c8a237325bbfcc51, type: 3}
 --- !u!114 &4204412731965545026

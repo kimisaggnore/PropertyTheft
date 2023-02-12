@@ -90,10 +90,7 @@ public class MaterialHolder : MonoBehaviour
         }
 
         ma.ApplyMaterials(propertyList);
-        if(swapIconGO)
-        {
-            Destroy(swapIconGO);
-        }
+        DemarkForSwap();
         return removedProperty;
     }
 
@@ -114,10 +111,7 @@ public class MaterialHolder : MonoBehaviour
             onDefaultMaterial = false;
             propertyList.RemoveAt(0);
         }
-        if(swapIconGO)
-        {
-            Destroy(swapIconGO);
-        }
+        DemarkForSwap();
         ma.ApplyMaterials(propertyList);
     }
 
@@ -127,6 +121,13 @@ public class MaterialHolder : MonoBehaviour
         swapIconGO = Instantiate
             (swapIcon, transform.position, 
             Quaternion.identity, transform);
+    }
+    public void DemarkForSwap()
+    {
+        if (swapIconGO)
+        {
+            Destroy(swapIconGO);
+        }
     }
 
 }
